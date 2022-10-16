@@ -1,5 +1,14 @@
 # Create Your Own VPN Server
 
+- [Prerequisites](https://github.com/jacob-schmitt/liberty#prerequisites)
+- [Get a VPS](https://github.com/jacob-schmitt/liberty#get-a-vps)
+- [Method 1: ShadowsocksR](https://github.com/jacob-schmitt/liberty#method-1-shadowsocksr)
+  - [Server](https://github.com/jacob-schmitt/liberty#server)
+  - [Client](https://github.com/jacob-schmitt/liberty#client)
+    - [Android](https://github.com/jacob-schmitt/liberty#android)
+    - [iOS](https://github.com/jacob-schmitt/liberty#ios)
+- [Credits](https://github.com/jacob-schmitt/liberty#credits)
+
 ## Prerequisites
 - Basic to intermediate knowledge of Linux.
 - Basic to intermediate knowledge of networking.
