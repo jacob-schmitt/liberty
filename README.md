@@ -191,3 +191,7 @@ docker run -d -p 8080:8080 --name v2ray --restart=always -v /etc/v2ray:/etc/v2ra
 - [V2Fly's V2Ray Core](https://github.com/v2fly/v2ray-core)
 
 
+## Stargazers over time
+[![Stargazers over time](https://starchart.cc/jacob-schmitt/liberty.svg)](https://starchart.cc/jacob-schmitt/liberty)
+
+
