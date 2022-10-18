@@ -37,6 +37,11 @@ You need to get yourself a VPS as the first step. I can recommend the following 
 - [Vultr](https://www.vultr.com)
   - :dollar: Starting at $6/month
   - :outbox_tray: 2 TB of free outbound transfer.
+- [Hostinger](https://www.hostinger.com/)
+  - :dollar: Starting at $3.5/month
+  - :credit_card: Accepts Bitcoin payments!
+  - :outbox_tray: 1 TB of free outbound transfer.
+  - :white_check_mark: If you're a __student__, you can get **10% discount**!
 
 Then, access your cloud server using a terminal. It is expected that you already know the how-to. So, I'm not going to go into details.
 
