@@ -14,13 +14,25 @@
 - Basic to intermediate knowledge of networking.
 - A Virtual Private Server (VPS) running preferably Ubuntu with **Docker** pre-installed.
 - If **Docker** is not already installed on your VPS, you must do it yourself.
+- Access to credit card **or** PayPal account **or** Bitcoin payment
 
 ## Get a VPS
 You need to get yourself a VPS as the first step. I can recommend the following providers:
-- [OVHcloud](https://www.ovhcloud.com): Starting at €3.5/month. 100 Mbps unlimited outbound.
-- [PulseHeberg](https://pulseheberg.com/): Starting at €4/month. 250 Mbps unlimited outbound. If you're a __student__, you can get a huge **discount**!
-- [DigitalOcean](https://digitalocean.com/): Starting at $4/month. 512 GB of free outbound transfer. If you're s __student__, you can get a $200 coupon via [GitHub Student Developer Pack](https://education.github.com/pack) program valid for 1 year!
-- [Vultr](https://www.vultr.com): Starting at $6/month. 2 TB of free outbound transfer.
+- [OVHcloud](https://www.ovhcloud.com)
+  - :dollar: Starting at €3.5/month
+  - :outbox_tray: 100 Mbps unlimited outbound
+- [PulseHeberg](https://pulseheberg.com/)
+  - :dollar: Starting at €4/month
+  - :credit_card: Accepts Bitcoin payments!
+  - :outbox_tray: 250 Mbps unlimited outbound
+  - :white_check_mark: If you're a __student__, you can get a huge **discount**!
+- [DigitalOcean](https://digitalocean.com/)
+  - :dollar: Starting at $4/month
+  - :outbox_tray: Starting at 512 GB of free outbound transfer
+  - :white_check_mark: If you're s __student__, you can get a $200 coupon via [GitHub Student Developer Pack](https://education.github.com/pack) program valid for 1 year!
+- [Vultr](https://www.vultr.com)
+  - :dollar: Starting at $6/month
+  - :outbox_tray: 2 TB of free outbound transfer.
 
 Then, access your cloud server using a terminal. It is expected that you already know the how-to. So, I'm not going to go into details.
 
