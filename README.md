@@ -1,8 +1,8 @@
-# Create Your Own VPN Server (ShadowsocksR & V2Ray)
+# Create Your Own VPN Server (SSR & V2Ray)
 
 - [Prerequisites](https://github.com/jacob-schmitt/liberty#prerequisites)
 - [Get a VPS](https://github.com/jacob-schmitt/liberty#get-a-vps)
-- [Method 1: ShadowsocksR](https://github.com/jacob-schmitt/liberty#method-1-shadowsocksr)
+- [Method 1: ShadowsocksR (SSR)](https://github.com/jacob-schmitt/liberty#method-1-shadowsocksr)
   - [Server](https://github.com/jacob-schmitt/liberty#server)
   - [Client](https://github.com/jacob-schmitt/liberty#client)
     - [Android](https://github.com/jacob-schmitt/liberty#android)
@@ -40,7 +40,7 @@ You need to get yourself a VPS as the first step. I can recommend the following 
 
 Then, access your cloud server using a terminal. It is expected that you already know the how-to. So, I'm not going to go into details.
 
-## Method 1: ShadowsocksR
+## Method 1: ShadowsocksR (SSR)
 ### Server
 - Pull the ShadowsocksR's Docker image using the following command:
 ```
@@ -181,5 +181,8 @@ docker run -d -p 8080:8080 --name v2ray --restart=always -v /etc/v2ray:/etc/v2ra
 - [ShadowsocksR](https://github.com/shadowsocksrr/shadowsocksr)
 - [ShadowsocksR's Docker Image](https://github.com/alibo/shadowrocket-docker)
 - [ShadowsocksR Android App Repo](https://github.com/shadowsocksrr/shadowsocksr-android/)
+- [V2Ray's Docker Image](https://hub.docker.com/r/teddysun/v2ray) by [@teddysun](https://github.com/teddysun)
+- [V2Ray Android App Repo](https://github.com/2dust/v2rayNG)
+- [V2Fly's V2Ray Core](https://github.com/v2fly/v2ray-core)
 
 
