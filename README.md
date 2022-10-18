@@ -95,6 +95,9 @@ the URL you got from the previous step, and import it into the app using the "+"
 - Now, you should try to prepare easy-to-follow instructions for the others to install the app and import the configuration. What they'll need to do is to copy 
 the URI you got from the previous step, open the app, click on **Add a Proxy**, from the **Auto Import** section choose **Proxy URI** and paste the URI there.
 
+## Method 2: V2Ray
+Soon ...
+
 ## Credits
 - [ShadowsocksR](https://github.com/shadowsocksrr/shadowsocksr)
 - [ShadowsocksR's Docker Image](https://github.com/alibo/shadowrocket-docker)
