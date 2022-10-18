@@ -1,4 +1,4 @@
-# Create Your Own VPN Server
+# Create Your Own VPN Server (ShadowsocksR & V2Ray)
 
 - [Prerequisites](https://github.com/jacob-schmitt/liberty#prerequisites)
 - [Get a VPS](https://github.com/jacob-schmitt/liberty#get-a-vps)
@@ -8,6 +8,9 @@
     - [Android](https://github.com/jacob-schmitt/liberty#android)
     - [iOS](https://github.com/jacob-schmitt/liberty#ios)
 - [Method 2: V2Ray](https://github.com/jacob-schmitt/liberty#method-2-v2ray)
+  - [Server](https://github.com/jacob-schmitt/liberty#server-1)
+  - [Client](https://github.com/jacob-schmitt/liberty#client-1)
+    - [Android](https://github.com/jacob-schmitt/liberty#android-1)
 - [Credits](https://github.com/jacob-schmitt/liberty#credits)
 
 ## Prerequisites
