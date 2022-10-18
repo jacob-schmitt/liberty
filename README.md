@@ -7,6 +7,7 @@
   - [Client](https://github.com/jacob-schmitt/liberty#client)
     - [Android](https://github.com/jacob-schmitt/liberty#android)
     - [iOS](https://github.com/jacob-schmitt/liberty#ios)
+- [Method 2: V2Ray](https://github.com/jacob-schmitt/liberty#method-2-v2ray)
 - [Credits](https://github.com/jacob-schmitt/liberty#credits)
 
 ## Prerequisites
