@@ -47,7 +47,7 @@ docker pull alibo/shadowrocket-docker
 ```
 docker run -d --restart=always -e "SSR_PORT=1443" -e "SSR_PASSWORD=12345678" -e "SSR_METHOD=chacha20-ietf" -e "SSR_OBFS=http_post_compatible" -p 80:1443 -p 80:1443/udp alibo/shadowrocket-docker
 ```
-**NOTE**: Make sure to change the value of the field ```SSR_PASSWORD```!
+:warning: Make sure to change the value of the field ```SSR_PASSWORD```!
 
 ### Client
 #### Android
@@ -97,7 +97,82 @@ the URL you got from the previous step, and import it into the app using the "+"
 the URI you got from the previous step, open the app, click on **Add a Proxy**, from the **Auto Import** section choose **Proxy URI** and paste the URI there.
 
 ## Method 2: V2Ray
-Soon ...
+### Server
+- Pull the V2Ray's Docker image using the following command:
+```
+docker pull teddysun/v2ray
+```
+- Create a `config.json` file in the `/etc/v2ray/`directory with the following content. If the directory doesn't exist, make one.
+```json
+{
+  "dns": {
+    "servers": [
+      "1.1.1.1",
+      "8.8.8.8"
+    ]
+  },
+  "inbounds": [{
+    "port": 8080,
+    "protocol": "vmess",
+    "settings": {
+      "clients": [
+        {
+          "id": "18d99b5a-9069-41c0-8d3f-65c03deb005d",
+          "level": 1,
+          "alterId": 0,
+          "security": "chacha20-poly1305"
+        }
+      ]
+    },
+    "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "response": {
+              "version": "1.1",
+              "status": "200",
+              "reason": "OK",
+              "headers": {
+                "Content-Type": ["application/x-msdownload", "text/html", "application/xml"],
+                "Transfer-Encoding": ["chunked"],
+                "Connection": ["keep-alive"],
+                "Pragma": "no-cache"
+              }
+            }
+          }
+        }
+      }
+  }],
+  "outbounds": [{
+    "protocol": "freedom",
+    "settings": {}
+  }]
+}
+```
+- Run the following command to create and run a container:
+```
+docker run -d -p 8080:8080 --name v2ray --restart=always -v /etc/v2ray:/etc/v2ray teddysun/v2ray
+```
+:warning: Make sure to change the `id` value under the `client` field! You can generate a random UID [here](https://www.uuidgenerator.net/).
+
+### Client
+#### Android
+- Download the **v2rayNG** application from [here](https://github.com/2dust/v2rayNG/releases/download/1.7.20/v2rayNG_1.7.20.apk).
+- Install the app on your phone and open it.
+- At the top right, click on the "+" sign and choose **Type manually[Vmess]**.
+- Now you need to manually enter the details. Here's a quick guide:
+  - Remarks: Whatever name you like
+  - Address: The external IP address of your VPS
+  - Port: `8080`
+  - `id`: Your chosen UID (same as `uid` under the field `client` in the server settings)
+  - `alterId`: `0`
+  - Security: `chacha20-poly1305`
+  - Transport: `tcp`
+  - Head type: `http`
+- All set! Now connect to the server and check whether you can browse the internet.
+- Inside the app, you must be able to see a "Share" icon in front of your profile name. Touch it and choose **Export to clipboard**.
+- This is the URL (starting with `vmess://`) that you should give out to your friends and family.
 
 ## Credits
 - [ShadowsocksR](https://github.com/shadowsocksrr/shadowsocksr)
