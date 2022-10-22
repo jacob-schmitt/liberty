@@ -207,7 +207,7 @@ docker run -d -p 8080:8080 --name v2ray --restart=always -v /etc/v2ray:/etc/v2ra
 - At the top left click on **Preferences** then click on **Kernel Setting** for configuring core file path.
 - For **V2Ray Core Executable Path** enter `/opt/homebrew/bin/v2ray`.
 - For **V2Ray Assets Directory** enter `/opt/homebrew/share/v2ray`.
-> **note**
+> **Note**
 > 
 > If you didn't use brew to install V2Ray core should change above paths.
 - Click on the **Check V2Ray Core Settings** and if everythings was good then click on the **OK** at buttom.
