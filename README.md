@@ -203,7 +203,7 @@ docker run -d -p 8080:8080 --name v2ray --restart=always -v /etc/v2ray:/etc/v2ra
 #### Mac OS
 - For using **Qv2ray**, first must install [v2ray-core](https://github.com/v2fly/v2ray-core) on your system, I suggest use brew but you can see full structure [here](https://www.v2fly.org/en_US/guide/install.html) and [here](https://qv2ray.net/getting-started/step2.html#download-v2ray-core-files).
 - Install v2ray-core by typing `brew install v2ray` in terminal.
-- Now time for main app, download Qv2ray .dmg file from [here](https://github.com/Qv2ray/Qv2ray/releases) and install the app and open it.
+- Now time for main app, download **Qv2ray** .dmg file from [here](https://github.com/Qv2ray/Qv2ray/releases) and install the app and open it.
 - At the top left click on **Preferences** then click on **Kernel Setting** for configuring core file path.
 - For **V2Ray Core Executable Path** enter `/opt/homebrew/bin/v2ray`.
 - For **V2Ray Assets Directory** enter `/opt/homebrew/share/v2ray`.
