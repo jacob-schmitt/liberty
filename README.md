@@ -11,6 +11,8 @@
   - [Server](https://github.com/jacob-schmitt/liberty#server-1)
   - [Client](https://github.com/jacob-schmitt/liberty#client-1)
     - [Android](https://github.com/jacob-schmitt/liberty#android-1)
+    - [iOS](https://github.com/jacob-schmitt/liberty#ios-1)
+    - [Mac OS](https://github.com/jacob-schmitt/liberty#mac-os)
 - [Credits](https://github.com/jacob-schmitt/liberty#credits)
 
 ## Prerequisites
@@ -182,6 +184,44 @@ docker run -d -p 8080:8080 --name v2ray --restart=always -v /etc/v2ray:/etc/v2ra
 - Inside the app, you must be able to see a "Share" icon in front of your profile name. Touch it and choose **Export to clipboard**.
 - This is the URL (starting with `vmess://`) that you should give out to your friends and family.
 
+#### iOS
+- Download the **91VPN** application for **free** from [here](https://apps.apple.com/us/app/91vpn/id1483753706).
+- Install the app on your phone and open it.
+- At the buttom left, click on the **Nodes**.
+- At the buttom of page, click on **Add nude**.
+- Now you need to manually enter the details. Here's a quick guide:
+  - Protocol: `vmess`
+  - Server Address: The external IP address of your VPS
+  - Port: `8080`
+  - User ID/UUID: Your chosen UID (same as `uid` under the field `client` in the server settings)
+  - Leave "Enable TLS" unchecked.
+  - Stream Network: `tcp`
+  - Head type: `http`
+- Click **Save** at the top right.
+- All set! Now connect to the server and check whether you can browse the internet.
+
+#### Mac OS
+- For using **Qv2ray**, first must install [v2ray-core](https://github.com/v2fly/v2ray-core) on your system, I suggest use brew but you can see full structure [here](https://www.v2fly.org/en_US/guide/install.html) and [here](https://qv2ray.net/getting-started/step2.html#download-v2ray-core-files).
+- Install v2ray-core by typing `brew install v2ray` in terminal.
+- Now time for main app, download **Qv2ray** .dmg file from [here](https://github.com/Qv2ray/Qv2ray/releases) and install the app and open it.
+- At the top left click on **Preferences** then click on **Kernel Setting** for configuring core file path.
+- For **V2Ray Core Executable Path** enter `/opt/homebrew/bin/v2ray`.
+- For **V2Ray Assets Directory** enter `/opt/homebrew/share/v2ray`.
+> **Note** If you didn't use brew to install V2Ray core should change above paths.
+- Click on the **Check V2Ray Core Settings** and if everythings was good then click on the **OK** at buttom.
+- At the buttom left, Click on **New**.
+- Now you need to manually enter the details. Here's a quick guide:
+  - Tag: Custom name for your connection
+  - Host: The external IP address of your VPS
+  - Port: `8080`
+  - Type: `vmess`
+  - UUID: Your chosen UID (same as `uid` under the field `client` in the server settings)
+  - Transparent Porotocol: `tcp`
+  - Type: `http`
+- Click **Save** at buttom.
+- All set! Now connect to the server and check whether you can browse the internet.
+
+
 ## Credits
 - [ShadowsocksR](https://github.com/shadowsocksrr/shadowsocksr)
 - [ShadowsocksR's Docker Image](https://github.com/alibo/shadowrocket-docker)
@@ -193,5 +233,3 @@ docker run -d -p 8080:8080 --name v2ray --restart=always -v /etc/v2ray:/etc/v2ra
 
 ## Stargazers over time
 [![Stargazers over time](https://starchart.cc/jacob-schmitt/liberty.svg)](https://starchart.cc/jacob-schmitt/liberty)
-
-
