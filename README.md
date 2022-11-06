@@ -165,6 +165,7 @@ docker run -d -p 8080:8080 --name v2ray --restart=always -v /etc/v2ray:/etc/v2ra
 :warning: Make sure to change the `id` value under the `client` field! You can generate a random UID [here](https://www.uuidgenerator.net/).
 
 ### Client
+[Here](https://www.v2ray.com/en/awesome/tools.html) you can find a wide list of clients for different platforms.
 #### Android
 - Download the **v2rayNG** application from [here](https://github.com/2dust/v2rayNG/releases/download/1.7.20/v2rayNG_1.7.20.apk).
 - Install the app on your phone and open it.
@@ -181,6 +182,15 @@ docker run -d -p 8080:8080 --name v2ray --restart=always -v /etc/v2ray:/etc/v2ra
 - All set! Now connect to the server and check whether you can browse the internet.
 - Inside the app, you must be able to see a "Share" icon in front of your profile name. Touch it and choose **Export to clipboard**.
 - This is the URL (starting with `vmess://`) that you should give out to your friends and family.
+### IOS
+- You can use [napsternetv](https://apps.apple.com/us/app/napsternetv/id1629465476) for importing the config generated from the above steps
+
+### Windows/Linux/MaxOS
+- Download the Qv2Ray from [here](https://github.com/Qv2ray/Qv2ray/releases/tag/v2.7.0) based on your distribution
+- Download the V2Ray Core from [here](https://github.com/v2fly/v2ray-core/releases) based on your distribution and extract it
+- Open Qv2Ray and open `Prefeneces` go to `Kernel Settings` tab and enter the `Core Executable Path` and the `Asset Directory`. You can find the exectutable file in v2ray core directory you just unzipped in the previous step, it's an exececutanle with name `v2ray.exe`. And set the `Asset Directory` to path of the V2Ray core unzipped directory, it's a directory.
+- Finall click on `Check V2Ray Core Settings` and then you should get confirm message that `V2Ray path configuration check passed`
+- Now you are set to import configuration or create new configuration similar to the configuration setting in Android.
 
 ## Credits
 - [ShadowsocksR](https://github.com/shadowsocksrr/shadowsocksr)
